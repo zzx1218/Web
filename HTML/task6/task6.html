@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        body{margin:0;padding: 0;background-color: #999999}
+    /*   .main{width:980px;height:1000px; position:absolute;left: 50%;top:50%; margin-left: -490px; margin-top:-500px;border:1px solid red;}*/
+        .main{width:980px;height:1386px; background-color: #fff;margin:100px auto;position:relative;}
+        .first{width:100%;margin:0 auto;}
+        .first1{width:110px; height:61px;background-color: #D55D5C;position:relative;font-size:12px;color:#fff;float:left;margin-left: 40px;}
+        .span1{position:absolute;bottom:0;padding:0;margin:5px;}
+        .first2{width:110px; height:61px;;float:right;margin-right:20px;position:relative;}
+        .first3{width:892px;height:2px;background-color:#938e8c;margin-top: 62px;margin-left:40px;overflow: hidden;}
+        .second{margin-top:20px;margin-left:40px;margin-right:50px;}
+        .second1{width:641px; height:301px;background: url("1.jpg") no-repeat;background-size:641px 301px;z-index: -1;float:left;}
+        .second11{float:left;width: 191px;height: 301px;background-color:#2C513F;opacity:0.5; }
+        .second12{float:right;width: 191px;height: 301px;background-color:#E4B7B7;opacity:0.5; }
+        .second2{width:203px;height:301px;float:right;}
+        .second21{width:203px;height:2px;background-color: #CC8091;}
+        .p1{font-family: "微软雅黑";font-size: 24px;color: #000000;text-decoration: underline;line-height: 40px;font-variant: small-caps;}
+        .p2{font-size: 12px;color:#676767;font-family: "楷体";margin:-20px 0px 10px 0px;line-height: 10px;}
+        .p3{font-size: 90px;color: #75b86b;font-family: "微软雅黑";font-style: italic;margin-top:-10px;}
+        .p4{margin-top:-110px;position:relative;}
+        .span2{font-size: 55px;color: #cc8091;font-family: "微软雅黑";}
+        .span3{font-size: 21px;color: #cc8091;font-family: "微软雅黑";position:absolute;margin-top:20px;}
+        .span4{font-size: 12px;color: #cc8091;font-family: "微软雅黑";position:absolute;margin-top:45px;}
+        .third{margin-top:340px;margin-left:40px;width:641px;border:1px solid blue;position:relative;}
+        .third1,.third2,.third3{float:left;width:200px;height:300px;}
+        .third2,.third3{margin-left: 17px;}
+        .third1 h3{font-size: 20px;color:#418c59;font-family: "微软雅黑";font-weight:bold;text-decoration:underline}
+        .third1 p{font-size: 16px;color:#767777;font-family: "宋体"; line-height:16px;}
+        .third2 h3{font-size: 20px;color:#d2994f;font-weight:bold;text-decoration:underline}
+        .third2 p{font-size: 16px;color:#767777;font-family: "宋体"; line-height:16px;}
+        .third3 h3{font-size: 20px;color:#cc7680;font-weight:bold;text-decoration:underline}
+        .third3 p{font-size: 16px;color:#767777;font-family: "宋体"; line-height:16px;}
+        .third3 li{font-size: 15px;color:#231815;font-family: "微软雅黑";line-height: 16px;opacity:0.7;}
+        .third3 span{font-size: 15px;color:#231815;font-family: "微软雅黑";font-style: italic;line-height:16px; opacity:0.7;}
+        .last{margin-top: 320px;margin-left:40px;position:relative;}
+        .last1{width:420px;height:600px;float:left;position:relative;}
+        .last2{width:458px;height:600px;float:right;margin-left:440px;position:absolute}
+        .p5{font-size: 42px;color:#11456b;font-family: "黑体";font-weight: bold;light-height: 16px;text-transform: uppercase;}
+        .p5 span{font-size: 72px;color:#f5e327;font-family: "黑体";font-weight: bold;font-style: italic;}
+        .p6{font-size:33px;color:#11456b;font-family: "黑体";font-weight: bold;margin-top: -40px;}
+        .p7{background-color: #000000;width:430px;height:2px;}
+        .last12 p{font-size: 16px;color:#767777;font-family: "宋体";line-height: 16px;}
+        .p8:first-letter{float:left;font-size: 70px;color:#f5e327;font-family: "微软雅黑";padding:10px 10px 30px 0;}
+
+        .last12 img{width: 150px; height:150px;float:right;margin-top:-20px;}
+        .last21{height:275px;background: url("3.jpg") no-repeat;background-size: 458px 275px;position:relative;}
+        .last211{margin-top:230px;margin-left:40px;position:absolute;}
+        .span5{font-size: 26px;color:#ffffff;font-family: "微软雅黑";}
+        .span6{font-size: 12px;color:greenyellow;font-family: "微软雅黑";letter-spacing: 1.4ex;}
+        .span7{width:3px; height:44px; color:greenyellow;}
+        .last22{background: #938e8c;height:330px;position: relative;}
+        .last22 ul{list-style: decimal;font-size: 16px;color:#5a5b5b;font-family: "宋体";text-align: left;line-height: 30px;margin-left: 20px;margin-top:20px;position:absolute;}
+        .last22 ul span{font-size: 12px;color:#5a5b5b;font-family: "宋体";font-style: italic;text-align:right;light-height:20px;}
+        .last221{background-color:lightcoral;width:260px;height:160px; margin-top:170px;position:absolute;}
+        .last222{margin-left:270px; margin-top:170px;position:absolute;}
+        .last2211{font-size: 110px;color:#ffffff;font-family: "微软雅黑";position:absolute; margin-left: 10px;margin-top:20px;}
+        .last2212{background-color: #ffffff;width:2px; height:86px;position:absolute; margin-left: 80px;margin-top:50px;}
+        .span8{font-size: 21px;color:#ffffff;font-family: "黑体";font-style: italic;line-height: 24px;position:absolute; margin-left: 90px;margin-top:60px;}
+        .span0{font-size: 12px;color:#ffffff;font-family: "黑体";line-height: 10px;position:absolute; margin-left: 90px;margin-top:90px;}
+        .last222 p #sp2{font-size: 14px;color:#5a5b5b;font-family: "黑体";font-style:italic;line-height: 16px;}
+        .last222 p #sp1{font-size: 72px;color:#d45d5c;font-family: "黑体";margin-top:-30px;margin-left:-40px;;position:absolute;}
+        .last222 p #sp3{font-size: 72px;color:#d45d5c;font-family: "黑体";margin-top:20px;margin-left:-20px;;position:absolute;}
+        footer{margin-top:950px;height:20px;}
+        .footer1{width:898px;height:2px;background-color:#938e8c;margin-left:40px;margint-bottom:10px;bottom:10px;overflow: hidden;     }
+        .word{float:right;margin-right:50px;font-size: 12px;color:#d45d5c;font-family: "黑体";}
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="first">
+        <div class="first1"><span class="span1">ife.baidu.com</span></div>
+        <div class="first2"><span class="span1">2016.03</span></div>
+        <div class="first3"></div>
+    </div>
+    <div class="second">
+        <div class="second1">
+            <div class="second11"></div>
+            <div class="second12"></div>
+        </div>
+        <div class="second2">
+            <div class="second21"></div>
+            <div class="second22">
+                <p class="p1">About<br/>Technology</p>
+                <p class="p2">About technologe about technologe about technology</p>
+                <p class="p3">400</p>
+                <p class="p4">
+                   <span class="span2">3.2</span>
+                   <span class="span3">CSS</span><span class="span4">CSSSSSSSSS</span>
+                </p>
+            </div>
+            <div class="second23"></div>
+            <div class="second24"></div>
+        </div>
+    </div>
+    <div class="third">
+        <div class="third1">
+            <h3>百度</h3>
+            <P>百度（Nasdaq：BIDU）是全球最大的中文搜索引擎、最大的中文网站。2000年1月由李彦宏创立于北京中关村，致力于向人们提供“简单，可依赖”的信息获取方式。“百度”二字源于中国宋朝词人辛弃疾的《青玉案·元夕》词句“众里寻他千百度”，象征着百度对中文信息检索技术的执著追求。
+                2015年1月24日，百度创始人、董事长兼CEO李彦宏4</P>
+        </div>
+        <div class="third2">
+            <h3>新浪</h3>
+            <P>新浪（NASDAQ：SINA），是一家网络公司的名称，服务大中华地区与海外华人，新浪拥有多家地区性网站，通过旗下五大业务主线为用户提供网络服务，网下的北京新浪、香港新浪、台北新浪、北美新浪等覆盖全球华人社区的全球最大中文门户网站，2012年11月新浪注册用户已突破4亿。
+                新浪公司是一家服务于中国及全球华人社群的网络媒体公司。 </P>
+        </div>
+        <div class="third3">
+            <h3>搜狐</h3>
+            <P>搜狐公司是中国领先的新媒体、通信及移动增值服务公司，是中文世界强劲的互联网品牌。搜狐是一个具有影响力与公信力的新闻中心、联动娱乐市场，
+                跨界经营的娱乐中心、深受体育迷欢迎的体育中心、引领潮流的时尚文化中心。“搜狐”在中国是家喻户晓的名字。</P>
+            <ul style="list-style: none">
+                <li>百度------<span>90%</span></li>
+                <li>新浪------<span>75%</span></li>
+                <li>搜狐------<span>40%</span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="last">
+        <div class="last1">
+            <div>
+                <p class="p5"><span>the</span> technology of front</p>
+                <p class="p6">前端技术学院</p>
+                <p class="p7"></p>
+            </div>
+            <div class="last12">
+                <p class="p8">前端对于网站来说，通常是指，网站的前台部分包括网站的表现层和结构层。因此前端技术一般分为前端设计和前端开发，前端设计一般可以理解为网站的视觉设计，前端开发则是网站的前台代码实现，包括基本的HTML和CSS以及JavaScript，现在最新的高级版本HTML5、CSS3，以及SVG等。</p>
+                <img src="2.jpg"/>
+                <p>这三个是前端开发中最基本也是最必须的三个技能。前端的开发中，在页面的布局时， HTML将元素进行定义，CSS对展示的元素进行定位，再通过JavaScript实现相应的效果和交互。虽然表面看起来这些很简单，但这里面需要掌握的东西绝对不会少。在进行开发前，需要对这些概念弄清楚、弄明白，这样在开发的过程中才会得心应手。</p>
+
+                <p>HTML指的是超文本标记语言，这个也是我们网页最常用普通的语言了，经历了多个版本的发展，已经发展到5.0版了，得力于W3C建立的标准和规范</p>
+            </div>
+        </div>
+        <div class="last2">
+            <div class="last21">
+                <div class="last211"> <span class="span7">|&nbsp;</span><span class="span5">前端技术</span><span class="span6">&nbsp;前端技术前端技术</span></div>
+
+            </div>
+            <div class="last22">
+                <ul>
+                    <li>前端前端前端前端前端前端-----------------<span>前端</span></li>
+                    <li>前端前端前端前端前端前端-----------------<span>前端</span></li>
+                    <li>前端前端前端前端前端前端-----------------<span>前端</span></li>
+                </ul>
+                <div class="last221">
+                    <div class="last2211">0</div>
+                    <div class="last2212"></div>
+                    <div class="last2213">
+                        <span class="span8">ONE TWO</span><br/>
+                        <span class="span8">THREE FORE FIVE</span>
+                        <span class="span0">hello world hello worls hello world hello world</span>
+                    </div>
+                </div>
+
+                <div class="last222">
+
+                    <p><span id="sp1">“</span><span id="sp2">hello world hello world hello world hello world hello world hello</span><span id="sp3">”</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer1"></div>
+        <div class="word">ife.baidu.com</div>
+    </footer>
+
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<style type="text/css">
+    *{margin: 0;padding: 0}
+    header,footer{background-color: black;width: 100%;height: 100px}
+    header,footer,div.parent{position:relative;}
+    .img1{width:200px;height:80px;background:url("bd_logo1_31bdc765.png") no-repeat;background-size: contain;position:absolute;margin-left: 40px;margin-top: 10px;}
+    .load{float:right;margin-right: 40px;margin-top: 30px;}
+    a{text-decoration:none;font-size: 1.5em;color:#fff;}
+    .parent{
+        width:100%;
+        height:2350px;
+        border:1px solid red;
+        background-color:#999;
+        overflow:auto;
+        zoom:1
+    }
+    footer{font-size: 1.2em; color:#fff;margin-top: 0px;}
+    .left{float:left;margin-right:35%;margin-left:40px;line-height: 2.5em;}
+    .right{width:500px;float:right;margin-left:70%; border:1px solid blue;background-color: #fff;padding-top:20px;padding-bottom:20px;padding-left:30px;line-height:2.5em;
+        text-aline:center;position:absolute;margin-top:20px;overflow: auto;zoom: 1;}
+    .right_span{color:#999;}
+    .footer_span{position:absolute;top:50%;left:50%}
+    .de_span{vertical-align: top;}
+    .left1,.left2,.left3,.left4{background-color: #fff;padding: 20px;margin-top: 20px;position:relative;}
+    .p1{text-indent: 2em;}
+    .parent_div > div {border:1px solid red;}
+    .parent{clean:both;position:relative; }
+    #div1,#div2,#div3,#div4,#div5,#div6,#div7,#div8,#div9,#div10{display: inline-block;width: 150px; height: 150px;margin:20px;text-align: center;}
+    #div11{width: 150px; height: 120px;background: url("1.jpg") no-repeat; background-size: 150px 110px}
+    #div21{width: 150px; height: 120px;background: url("2.jpg") no-repeat; background-size: 150px 110px}
+    #div31{width: 150px; height: 120px;background: url("3.jpg") no-repeat; background-size: 150px 110px}
+    #div41{width: 150px; height: 100px;background: url("4.jpg") no-repeat; background-size: 150px 110px}
+    #div51{width: 150px; height: 120px;background: url("5.jpg") no-repeat; background-size: 150px 110px}
+    #div61{width: 150px; height: 120px;background: url("6.jpg") no-repeat; background-size: 150px 110px;}
+    #div71{width: 150px; height: 120px;background: url("7.jpg") no-repeat; background-size: 150px 110px;}
+    #div81{width: 150px; height: 120px;background: url("8.jpg") no-repeat; background-size: 150px 110px;}
+    #div91{width: 150px; height: 120px;background: url("9.jpg") no-repeat; background-size: 150px 110px;}
+    #div01{width: 150px; height: 120px;background: url("9.png") no-repeat; background-size: 150px 110px;}
+
+
+</style>
+<body>
+<header>
+    <div class="img1"></div>
+    <div class="load">
+        <a href="www.baidu.com" target="_blank" title="百度">百度 </a>&nbsp;&nbsp;
+        <a href="www.sina.com" target="_parent" title="新浪">新浪</a>&nbsp;&nbsp;
+        <a href="www.souhu.com" target="_blank" title="搜狐">搜狐 </a>&nbsp;&nbsp;
+        <a href="www.google.com" target="_parent" title="谷歌">谷歌</a>
+    </div>
+</header>
+<div class="parent">
+    <div class="left">
+        <div class="left1">
+            <h1>百度</h1>
+            <p>公司简介</p>
+            <p>来源：百度百科</p>
+            <p class="p1">百度（Nasdaq：BIDU）是全球最大的中文搜索引擎、最大的中文网站。2000年1月由李彦宏创立于北京中关村，致力于向人们提供“简单，可依赖”的信息获取方式。“百度”二字源于中国宋朝词人辛弃疾的《青玉案·元夕》词句“众里寻他千百度”，象征着百度对中文信息检索技术的执著追求。
+                2015年1月24日，百度创始人、董事长兼CEO李彦宏在百度2014年会暨十五周年庆典上发表的主题演讲中表示，十五年来，百度坚持相信技术的力量，始终把简单可依赖的文化和人才成长机制当成最宝贵的财富，他号召百度全体员工，向连接人与服务的战略目标发起进攻[1]  。2015年11月18日，百度与中信银行发起设立
+                百信银行。<p/>
+                <img src="baidu.jpg" style="height:150px; width:180px;"/>
+            <p class="p1">   “百度”这一公司名称便来自宋词“众里寻他千百度”。 （百度公司会议室
+                名为青玉案，即是这首词的词牌）。而“熊掌”图标的想法来源于“猎人巡迹熊爪”的刺激，与李彦宏博士的“分析搜索技术”非常相似，从而构成百度的搜索概念，也最终成为了百度的图标形象。 在这之后，由于在搜索引擎中，大都有动物形象来形象，如SOHU的狐，如GOOGLE的狗，而百度也便顺理成章称做了熊。百度熊也便成了百度公司的形象物。</p>
+        </div>
+        <div class="left2">
+            <h1>新浪</h1>
+            <p>公司简介</p>
+            <p>来源：百度百科</p>
+            <p class="p1">新浪（NASDAQ：SINA），是一家网络公司的名称，服务大中华地区与海外华人，新浪拥有多家地区性网站，通过旗下五大业务主线为用户提供网络服务，网下的北京新浪、香港新浪、台北新浪、北美新浪等覆盖全球华人社区的全球最大中文门户网站，2012年11月新浪注册用户已突破4亿。
+                新浪公司是一家服务于中国及全球华人社群的网络媒体公司。新浪通过门户网站新浪网、移动门户手机新浪网和社交网络服务及微博客服务微博组成的数字媒体网络，帮助广大用户通过互联网和移动设备获得专业媒体和用户自生成的多媒体内容（UGC）并与友人进行兴趣分享。<br/>
+                <img src="sina.jpg" style="height:150px; width:180px;"/>
+            <p class="p1">新浪是由四通利方和华渊资讯网合并而成。sina一词源于拉丁文的中国sino，在拉丁语系中，Sino是 “中国”之意，而在古印度语中，Cina也是中国的意思，与英语China （中国）合拼，取名sina，意为“中国”。sina的中文名称新浪是当时的总裁王志东起的，这个域名很好的表达了新浪网希望自己成为中华区最大门户的决心。</p>
+        </div>
+        <div class="left3">
+            <h1>搜狐</h1>
+            <p>公司简介</p>
+            <p>来源：百度百科</p>
+            <p class="p1">搜狐公司是中国领先的新媒体、通信及移动增值服务公司，是中文世界强劲的互联网品牌。
+                搜狐是一个具有影响力与公信力的新闻中心、联动娱乐市场，跨界经营的娱乐中心、深受体育迷欢迎的体育中心、引领潮流的时尚文化中心。“搜狐”在中国是家喻户晓的名字。
+                搜狐公司是2008北京奥运会互联网内容服务赞助商，是中国网民上网冲浪的首选门户网站。</p>
+            <img src="souhu.jpg" style="height:150px; width:180px;"/>
+            <p>1995年11月，张朝阳从美国回国。次年8月拿到天使投资并以此创办“爱特信信息技术有限公司”网站，其中一部分内容是分类搜索，改名为“搜乎”。第二轮融资阶段时，考虑到无论在世界还是中国文化中，狐狸都象征着机敏、灵活和聪慧，而这些特质也符合搜索引擎特点，1997年11月将“搜乎”改为“搜狐”，1998年2月，正式更名为搜狐公司，搜狐正式诞生，搜狐影响了中国的网民，成为主流资讯媒体和沟通互动的平台 。</p>
+            <p></p>
+        </div>
+        <div class="left4">
+            <h1>招聘信息</h1>
+            <div class="parent_div">
+                <div id="div1">
+                    <div>好看的图片</div>
+                    <div id="div11"></div>
+                </div>
+                <div id="div2">
+                    <div>好看的图片</div>
+                    <div id="div21"></div>
+                </div>
+                <div id="div3">
+                    <div>好看的图片</div>
+                    <div id="div31"></div>
+                </div>
+                <div id="div4">
+                    <div>好看的图片</div>
+                    <div id="div41"></div>
+                </div>
+                <div id="div5">
+                    <div>好看的图片</div>
+                    <div id="div51"></div>
+                </div>
+                <div id="div6">
+                    <div>好看的图片</div>
+                    <div id="div61"></div>
+                </div>
+                <div id="div7">
+                    <div>好看的图片</div>
+                    <div id="div71"></div>
+                </div>
+                <div id="div8">
+                    <div>好看的图片</div>
+                    <div id="div81"></div>
+                </div>
+                <div id="div9">
+                    <div>好看的图片</div>
+                    <div id="div91"></div>
+                </div>
+                <div id="div10">
+                    <div>好看的图片</div>
+                    <div id="div01"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+       <h2>| 这里以后是一个侧栏，这是侧栏的标题</h2>
+        &nbsp请输入邮箱地址&nbsp<input type="text" value="这是一个文本输入框" style="height: 20px"/><br/>
+            <span class="right_span">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp邮箱地址请按要求格式输入</span><br/>
+        &nbsp&nbsp&nbsp请输入密码&nbsp<input type="password"  value="........." style="height: 20px"/><br/>
+        &nbsp请重复输入密码&nbsp<input  type="password" value="........." style="height: 20px"/><br/>
+        <span class="right_span" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp密码请为6-16位英文数字</span><br/>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp性别&nbsp<input type="radio" name="sex" value="male" style="height: 15px"/>男&nbsp<input type="radio" name="sex" value="female" style="height: 15px"/>女<br/>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp城市&nbsp<select size="1" name="city" style="height: 20px">
+            <option>北京</option>
+            <option>上海</option>
+            <option>天津</option>
+            <option>武汉</option>
+            <option>青岛</option>
+        </select><br/>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp爱好&nbsp<input type="checkbox" name="insterting" value="运动"/>运动&nbsp
+        <input type="checkbox" name="insterting" value="艺术"/>艺术&nbsp
+        <input type="checkbox" name="insterting" value="科学"/>科学<br/>
+        &nbsp&nbsp&nbsp&nbsp<span class="de_span">个人描述&nbsp</span><textarea name="miaoshu" cols="50" rows="6"></textarea>
+        &nbsp&nbsp<input type="button" name="submit" value="确认提交" style="background-color: blue; width: 90%; height:50px;border-radius: 20px;"/>
+    </div>
+</div>
+<footer><span class="footer_span">版权所有&copy</span></footer>
+</body>
+</html>
